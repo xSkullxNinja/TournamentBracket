@@ -1,0 +1,6 @@
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe.config
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.pdb
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.csprojResolveAssemblyReference.cache
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.exe
+c:\users\xskullxninja\documents\visual studio 2015\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.pdb
