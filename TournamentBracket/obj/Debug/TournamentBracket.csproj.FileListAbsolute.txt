@@ -1,3 +1,6 @@
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe.config
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.exe
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.pdb
+C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe
+C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.pdb
+C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.csprojResolveAssemblyReference.cache

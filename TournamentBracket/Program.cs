@@ -14,29 +14,18 @@ namespace TournamentBracket
         }
         public void Run()
         {
-            Console.WriteLine("NumPlayers");
-            int numPlayers = GetNumPlayers();
-            Console.WriteLine("NumPlayers: " + numPlayers);
+            UserInput input = new UserInput();
+            int numPlayers = input.GetNumParticipants();
             List<string> players = new List<string>();
             for(int i = 1; i <= numPlayers; ++i)
             {
-                Console.WriteLine("Player " + (i) + ": ");
-                players.Add(GetPlayerName());
+                players.Add(input.GetParticipantName(i));
             }
             Console.WriteLine(players.Count);
             for (int i = 0; i < numPlayers; ++i)
             {
                 Console.WriteLine(players[i]);
             }
-        }
-        private int GetNumPlayers()
-        {
-            string numPlayers = Console.ReadLine();
-            return Int32.Parse(numPlayers);
-        }
-        private string GetPlayerName()
-        {
-            return Console.ReadLine();
         }
         private void InputPlayer(string playerName)
         {
