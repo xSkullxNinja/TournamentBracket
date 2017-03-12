@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleElimination\SingleEliminationBracket.cs" />
+    <Compile Include="SingleElimination\SingleEliminationTeam.cs" />
+    <Compile Include="TournamentBracket.cs" />
+    <Compile Include="TournamentGame.cs" />
+    <Compile Include="TournamentTeam.cs" />
     <Compile Include="UserInput.cs" />
   </ItemGroup>
   <ItemGroup>

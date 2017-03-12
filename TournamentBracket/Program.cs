@@ -16,20 +16,63 @@ namespace TournamentBracket
         {
             UserInput input = new UserInput();
             int numPlayers = input.GetNumParticipants();
-            List<string> players = new List<string>();
+            SingleEliminationBracket bracket = new SingleEliminationBracket();
             for(int i = 1; i <= numPlayers; ++i)
             {
-                players.Add(input.GetParticipantName(i));
+                TournamentTeam team = new TournamentTeam(input.GetParticipantName(i));
+                bracket.AddTeam(team);
             }
-            Console.WriteLine(players.Count);
-            for (int i = 0; i < numPlayers; ++i)
+            bracket.BeginTournament();
+            while (bracket.RemainingGames > 0)
             {
-                Console.WriteLine(players[i]);
+                bracket.PrintCurrentRound();
+                bracket.PlayRound();
+                Console.WriteLine("Remaining Games: " + bracket.RemainingGames);
             }
+            Console.WriteLine("Tournament Winner: " + bracket.CurrentGames[0].FirstTeam.Name);
+            //Console.WriteLine(bracket.Teams.Count);
+            //for (int i = 0; i < numPlayers; ++i)
+            //{
+            //    Console.WriteLine(bracket.Teams[i].Name);
+            //}
+            //string reroll = "";
+            //while (string.IsNullOrWhiteSpace(reroll))
+            //{
+            //    //SingleEliminationGames(players);
+            //    Console.WriteLine("Reroll?");
+            //    reroll = Console.ReadLine();
+            //}
         }
-        private void InputPlayer(string playerName)
-        {
+        //private void InputPlayer(string playerName)
+        //{
 
-        }
+        //}
+        //private void SingleEliminationGames(List<string> Teams)
+        //{
+        //    Random rand = new Random();
+        //    List<string> NewTeams = new List<string>();
+        //    for(int i = 0; i < Teams.Count; ++i)
+        //    {
+        //        NewTeams.Add(Teams[i]);
+        //    }
+        //    List<string> Games = new List<string>();
+        //    for(int i = 0; i < Teams.Count / 2; ++i)
+        //    {
+        //        string nextGame = "";
+        //        int firstTeam = rand.Next(0, NewTeams.Count);
+        //        nextGame += NewTeams[firstTeam] + " V ";
+        //        NewTeams.RemoveAt(firstTeam);
+        //        int secondTeam = rand.Next(0, NewTeams.Count);
+        //        nextGame += NewTeams[secondTeam];
+        //        NewTeams.RemoveAt(secondTeam);
+        //        Games.Add(nextGame);
+        //    }
+        //    Console.WriteLine("Games: " + Games.Count);
+        //    for (int i = 0; i < Games.Count; ++i)
+        //    {
+        //        Console.WriteLine(Games[i]);
+        //    }
+
+        //}
     }
 }
