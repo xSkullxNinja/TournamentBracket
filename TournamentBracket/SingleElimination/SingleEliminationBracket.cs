@@ -32,11 +32,33 @@ namespace TournamentBracket
             }
             else
             {
-                int nextPowerOfTwo = 0;
+                int nextPowerOfTwo = 1;
                 for (int i = TeamCount; i != 1; i = i >> 1)
                 {
-                    nextPowerOfTwo += 1;
+                    nextPowerOfTwo = nextPowerOfTwo << 1;
                 }
+                int extraCompatants = TeamCount - nextPowerOfTwo;
+                for (int i = 0; i < extraCompatants; ++i)
+                {
+                    NextGames.Add(new TournamentGame());
+                }
+                for(int i = 0; i < extraCompatants * 2; ++i)
+                {
+                    NextGames[i / 2].AddTeam(Teams[i]);
+                }
+                CurrentGames = NextGames;
+                NextGames = new List<TournamentGame>();
+                for (int i = 0; i < nextPowerOfTwo / 2; ++i)
+                {
+                    NextGames.Add(new TournamentGame());
+                }
+                int startingPos = extraCompatants * 2;
+                for (int i = startingPos; i < TeamCount; ++i)
+                {
+                    NextGames[(i - extraCompatants) / 2].AddTeam(Teams[i]);
+                }
+                GameCount = TeamCount - 1;
+                RemainingGames = GameCount;
             }
         }
         public void BeginNextRound()
