@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TournamentBracket
 {
@@ -10,16 +6,16 @@ namespace TournamentBracket
     {
         public static void Main(string[] args)
         {
-            (new Program()).Run();
+            new Program().Run();
         }
         public void Run()
         {
-            UserInput input = new UserInput();
-            int numPlayers = input.GetNumParticipants();
-            SingleEliminationBracket bracket = new SingleEliminationBracket();
+            var input = new UserInput();
+            var numPlayers = input.GetNumParticipants();
+            var bracket = new SingleEliminationBracket();
             for(int i = 1; i <= numPlayers; ++i)
             {
-                TournamentTeam team = new TournamentTeam(input.GetParticipantName(i));
+                var team = new TournamentTeam(input.GetParticipantName(i));
                 bracket.AddTeam(team);
             }
             bracket.BeginTournament();
@@ -29,7 +25,7 @@ namespace TournamentBracket
                 bracket.PlayRound();
                 Console.WriteLine("Remaining Games: " + bracket.RemainingGames);
             }
-            Console.WriteLine("Tournament Winner: " + bracket.CurrentGames[0].FirstTeam.Name);
+            Console.WriteLine("Tournament Winner: " + bracket.CurrentGames[0].FirstTeam.TeamName);
             //Console.WriteLine(bracket.Teams.Count);
             //for (int i = 0; i < numPlayers; ++i)
             //{

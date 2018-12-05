@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TournamentBracket
+﻿namespace TournamentBracket
 {
     public class TournamentGame
     {
@@ -29,7 +23,7 @@ namespace TournamentBracket
         }
         public string Versus()
         {
-            return FirstTeam.Name + " V " + SecondTeam.Name;
+            return FirstTeam.TeamName + " Vs " + SecondTeam.TeamName;
         }
     }
 }
