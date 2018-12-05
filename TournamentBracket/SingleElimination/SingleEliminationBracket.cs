@@ -15,11 +15,11 @@ namespace TournamentBracket.SingleElimination
             var powerOfTwo = (TeamCount & (TeamCount - 1)) == 0;
             if (powerOfTwo)
             {
-                for (int i = 0; i < TeamCount / 2; ++i)
+                for (var i = 0; i < TeamCount / 2; ++i)
                 {
                     NextGames.Add(new TournamentGame());
                 }
-                for (int i = 0; i < TeamCount; ++i)
+                for (var i = 0; i < TeamCount; ++i)
                 {
                     NextGames[i / 2].AddTeam(Teams[i]);
                 }

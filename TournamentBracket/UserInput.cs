@@ -8,8 +8,7 @@ namespace TournamentBracket
         {
             Console.WriteLine("How many participants?");
             var numPlayersText = Console.ReadLine();
-            var numPlayers = -1;
-            int.TryParse(numPlayersText, out numPlayers);
+            int.TryParse(numPlayersText, out var numPlayers);
             while (numPlayers < 1 || numPlayers > 128)
             {
                 Console.WriteLine("Please enter a valid number?");

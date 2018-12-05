@@ -1,4 +1,5 @@
 ﻿using System;
+using TournamentBracket.SingleElimination;
 
 namespace TournamentBracket
 {
@@ -13,7 +14,7 @@ namespace TournamentBracket
             var input = new UserInput();
             var numPlayers = input.GetNumParticipants();
             var bracket = new SingleEliminationBracket();
-            for(int i = 1; i <= numPlayers; ++i)
+            for(var i = 1; i <= numPlayers; ++i)
             {
                 var team = new TournamentTeam(input.GetParticipantName(i));
                 bracket.AddTeam(team);
