@@ -15,11 +15,11 @@ namespace TournamentBracket
         {
             Teams = new List<TournamentTeam>();
         }
+
         public void AddTeam(TournamentTeam team)
         {
             Teams.Add(team);
             TeamCount += 1;
         }
-
     }
 }

@@ -15,17 +15,20 @@ namespace TournamentBracket
                 numPlayersText = Console.ReadLine();
                 int.TryParse(numPlayersText, out numPlayers);
             }
+
             return numPlayers;
         }
+
         public string GetParticipantName(int participantNumber)
         {
             Console.WriteLine("Please enter participant #" + participantNumber + "'s name?");
             var participantName = Console.ReadLine();
-            while(string.IsNullOrWhiteSpace(participantName))
+            while (string.IsNullOrWhiteSpace(participantName))
             {
                 Console.WriteLine("Please enter a valid name?");
                 participantName = Console.ReadLine();
             }
+
             return participantName;
         }
     }

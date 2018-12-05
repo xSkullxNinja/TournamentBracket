@@ -4,3 +4,10 @@ C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\obj
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.pdb
 C:\Users\xSkullxNInja\Documents\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.csprojResolveAssemblyReference.cache
+C:\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe.config
+C:\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.exe
+C:\Projects\TournamentBracket\TournamentBracket\bin\Debug\TournamentBracket.pdb
+C:\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.csprojAssemblyReference.cache
+C:\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.csproj.CoreCompileInputs.cache
+C:\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.exe
+C:\Projects\TournamentBracket\TournamentBracket\obj\Debug\TournamentBracket.pdb

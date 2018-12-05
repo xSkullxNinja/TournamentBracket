@@ -4,7 +4,6 @@
     {
         public SingleEliminationTeam(string teamName) : base(teamName)
         {
-
         }
     }
 }

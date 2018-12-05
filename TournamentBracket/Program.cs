@@ -9,16 +9,18 @@ namespace TournamentBracket
         {
             new Program().Run();
         }
+
         public void Run()
         {
             var input = new UserInput();
             var numPlayers = input.GetNumParticipants();
             var bracket = new SingleEliminationBracket();
-            for(var i = 1; i <= numPlayers; ++i)
+            for (var i = 1; i <= numPlayers; ++i)
             {
                 var team = new TournamentTeam(input.GetParticipantName(i));
                 bracket.AddTeam(team);
             }
+
             bracket.BeginTournament();
             while (bracket.RemainingGames > 0)
             {
@@ -26,6 +28,7 @@ namespace TournamentBracket
                 bracket.PlayRound();
                 Console.WriteLine("Remaining Games: " + bracket.RemainingGames);
             }
+
             Console.WriteLine("Tournament Winner: " + bracket.CurrentGames[0].FirstTeam.TeamName);
             //Console.WriteLine(bracket.Teams.Count);
             //for (int i = 0; i < numPlayers; ++i)
